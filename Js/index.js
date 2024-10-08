@@ -51,7 +51,7 @@ async function getCategoryProducts() {
 }
 // getCategoryProducts()
 
-if (location.pathname.includes("./productCatPro.html")) {
+if (location.pathname.includes("/productCatPro.html")) {
   getCategoryProducts();
 }
 
@@ -108,7 +108,7 @@ async function getProductDetail() {
   showProductDetail(data);
 }
 
-if (location.pathname.includes("./productDeteli.html")) {
+if (location.pathname.includes("/productDeteli.html")) {
   getProductDetail();
 }
 
@@ -192,7 +192,7 @@ if (location.pathname.includes("/addProduct.html")) {
           },
         }).showToast();
         setTimeout(function () {
-          location.pathname = "/index.html";
+          location.pathname = "../index.html";
         }, 3000);
         allInp.forEach((x)=>{
             x.classList.remove("is-valid")
