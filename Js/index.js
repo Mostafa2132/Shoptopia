@@ -51,7 +51,7 @@ async function getCategoryProducts() {
 }
 // getCategoryProducts()
 
-if (location.pathname.includes("/productCatPro.html")) {
+if (location.pathname.includes("./productCatPro.html")) {
   getCategoryProducts();
 }
 
@@ -108,13 +108,12 @@ async function getProductDetail() {
   showProductDetail(data);
 }
 
-if (location.pathname.includes("/productDeteli.html")) {
+if (location.pathname.includes("./productDeteli.html")) {
   getProductDetail();
 }
 
 function showProductDetail(arr) {
   let x = `
-   
                     <div class="col-md-6">
                 <img src="${arr.thumbnail}" class="w-100" alt="">
             </div>
