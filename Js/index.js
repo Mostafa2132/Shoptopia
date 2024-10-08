@@ -32,7 +32,7 @@ function showAllCat(arr) {
       let targetCat = e.target.innerText;
       localStorage.setItem("myCategory", targetCat);
 
-      location.pathname = "../productCatPro.html";
+      location.pathname = "/productCatPro.html";
     });
   }
 }
@@ -92,7 +92,7 @@ function showCategoryProducts(arr) {
   for (let i = 0; i < allProCat.length; i++) {
     allProCat[i].addEventListener("click", () => {
       localStorage.setItem("proId", allProCat[i].getAttribute("id"));
-      location.pathname = "../productDeteli.html";
+      location.pathname = "/productDeteli.html";
     });
   }
 }
@@ -193,7 +193,7 @@ if (location.pathname.includes("/addProduct.html")) {
           },
         }).showToast();
         setTimeout(function () {
-          location.pathname = "../index.html";
+          location.pathname = "/index.html";
         }, 3000);
         allInp.forEach((x)=>{
             x.classList.remove("is-valid")
