@@ -31,8 +31,7 @@ function showAllCat(arr) {
     allCat[i].addEventListener("click", (e) => {
       let targetCat = e.target.innerText;
       localStorage.setItem("myCategory", targetCat);
-
-      location.pathname = "/productCatPro.html";
+      location.pathname = "productCatPro.html";
     });
   }
 }
@@ -192,7 +191,7 @@ if (location.pathname.includes("/addProduct.html")) {
           },
         }).showToast();
         setTimeout(function () {
-          location.pathname = "index.html";
+          location.pathname = "/index.html";
         }, 3000);
         allInp.forEach((x)=>{
             x.classList.remove("is-valid")
